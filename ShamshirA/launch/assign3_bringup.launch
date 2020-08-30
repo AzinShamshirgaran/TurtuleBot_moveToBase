@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find turtlebot_bringup )/launch/minimal.launch"/>
+  <include file="$(find turtlebot_navigation )/launch/amcl_demo.launch">
+  <arg name="map_file" value="/home/ashamshirgaran/assign3Map/map.yaml" />
+  </include>
+  <include file="$(find turtlebot_rviz_launchers )/launch/view_navigation.launch"/>
+</launch>         
